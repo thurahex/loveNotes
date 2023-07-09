@@ -9,23 +9,31 @@
 </head>
 <body>
     <div class="header">
-        <button class="dark-btn">
+        <button class="dark-btn post"><a href="admin.php">post</a></button>
+        <!-- <button class="dark-btn">
             <div class="btn-circle"></div>
-        </button>
+        </button> -->
     </div>
     <!-- <p class="width">
 
     </p> -->
     <div class="container">
+        <?php 
+        require('conn.php');
+        $sql = "SELECT * FROM `posts`";
+        $posts =mysqli_query($conn,$sql);
         
+        foreach ($posts as $post){
+            
+        
+        ?>
         <div class="paper-card">
             <p class="text text-center">
-                အနောက်က တကောက်ကောက်လိုက်နေမှ အချစ်မဟုတ်ပါဘူး၊  အ၀ေးကြီး ပြေးထွက် ပေးရဲတာလည်း အချစ်ပါပဲ။ </br>အဲ"ချစ်တယ်" ဆိုတဲ့ စကားရဲ့ နောက်ကွယ်မှာ ပေးဆပ်ခဲ့ရတဲ့ အမည်မသိ နှလုံးသားများစွာရှိပါတယ်။ <br>
-                တစ်ခါတစ်လေ လောကကြီးက လှပစွာ ရက်စက်တက်တယ်နဲ့တူပါရဲ့ ....။
+                <?php echo$post['text'];?>
             </p>
             <a href="#" class="love">love</a>
         </div>
-        <div class="paper-card">
+        <!-- <div class="paper-card">
             <p class="text text-left">
                 အချစ်ဆိုတာ အလွန်ဆန်း
             </p>
@@ -36,8 +44,12 @@
                 i love you more tha n every thing ok?
             </p>
             <a href="#" class="love">love</a>
-        </div>
-    </div>
+        </div> -->
+    
+    <?php
+}
+?>
+</div>
     
 
     <script src="js/app.js"></script>

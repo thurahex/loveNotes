@@ -14,7 +14,7 @@
 }
 .header{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 
 }
 .dark-btn{
@@ -34,6 +34,21 @@
     border-radius: 10px;
     background-color:var(--orange);
 }
+.post{
+    background-color: var(--pureWhite);
+   
+    height: 30px;
+    border: none;
+    padding: 0 10px;
+    
+    border-radius: 15px;
+}
+.post a{
+    color: black;
+    text-decoration: none;
+    
+}
+
 
 body{
     background-color: var(--orange);
@@ -70,10 +85,12 @@ body{
     font-size: 20px;
     font-weight: bold;
     height: 350px;
+    
     overflow: hidden;
     
     
 }
+
 .text-left{
     text-align: left;
 }
@@ -85,6 +102,40 @@ body{
     color: var(--orange);
     font-size: 20px;
     font-weight: bold;
+    transition: .3s;
+}
+.love:hover{
+    font-size: 23px;
+    color: rgba(228, 53, 0, 0.932);
+}
+/* this is for admin html  */
+.form-group{
+    margin-top: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text-area{
+    background-color: #fCEfEf;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    border: none;
+    
+}
+.submit-btn{
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    transition: transform .3s;
+    color: rgb(27, 26, 26);
+    background-color: var(--lightGreen);
+}
+.submit-btn:hover{
+    color: var(--orange);
+    transform: translateY(-4px);
+    background-color: var(--pureWhite);
 }
 @media screen and (max-width:900px){
     .paper-card{
@@ -101,6 +152,7 @@ body{
         font-size: 20px;
         font-weight: bold;
         height: 260px;
+        line-height: 26ox;
         
         
     }
@@ -115,6 +167,9 @@ body{
         color: var(--orange);
         font-size: 20px;
         font-weight: bold;
+    }
+    .form-group{
+        width: 400px;
     }
 }
 @media screen and (max-width:700px){
@@ -147,6 +202,9 @@ body{
         color: var(--orange);
         font-size: 20px;
         font-weight: bold;
+    }
+    .form-group{
+        width: 300px;
     }
 }
 @media screen and (max-width:600px){
@@ -198,13 +256,16 @@ body{
         position: fixed;
         
         box-sizing: border-box;
-        background-color: black;
+        
     }
     .btn-circle{
         width: 20px;
         height: 20px;
         border-radius: 10px;
         background-color:white;
+    }
+    .form-group{
+        width: 300px;
     }
     
 }
@@ -263,6 +324,9 @@ body{
         height: 20px;
         border-radius: 10px;
         background-color:white;
+    }
+    .form-group{
+        width: auto;
     }
     
 }
