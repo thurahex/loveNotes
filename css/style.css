@@ -115,7 +115,7 @@ body{
 }
 @media (600px<=width<=768px){
     .paper-card{
-        width: 300px;
+        width: 260px;
         margin-top: 30px;
         height: 290px;
         border-radius: 30px;
