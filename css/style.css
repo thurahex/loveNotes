@@ -84,7 +84,7 @@ body{
     font-size: 20px;
     font-weight: bold;
 }
-@media (768px<=width<=992px){
+@media screen and (max-width:900px){
     .paper-card{
         width: 350px;
         height: 330px;
@@ -114,7 +114,8 @@ body{
         font-weight: bold;
     }
 }
-@media (600px<=width<=768px){
+@media screen and (max-width:700px){
+    
     .paper-card{
         width: 200px;
         margin-top: 30px;
@@ -127,7 +128,7 @@ body{
         color: rgb(54, 53, 53);
         font-size: var(--fs1);
         font-weight: bold;
-        height: 325px;
+        
         
         
     }
@@ -144,7 +145,7 @@ body{
         font-weight: bold;
     }
 }
-@media (width<=600px){
+@media screen and (max-width:600px){
     .paper-card{
         width: 200px;
         height: 200px;
@@ -199,13 +200,13 @@ body{
     }
     
 }
-@media (width<=300px){
+@media screen and (max-width:350px){
     .paper-card{
         width: 200px;
         height: 200px;
         border-radius: 30px;
         padding: 15px;
-        margin-top: 40px;
+        margin-top: 20px;
         background-color: var(--pureWhite);
     }
     .text{
