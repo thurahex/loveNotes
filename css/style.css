@@ -115,9 +115,9 @@ body{
 }
 @media (600px<=width<=768px){
     .paper-card{
-        width: 260px;
+        width: 200px;
         margin-top: 30px;
-        height: 290px;
+        height: 200px;
         border-radius: 30px;
         padding: 23px;
         background-color: var(--pureWhite);
@@ -145,8 +145,8 @@ body{
 }
 @media (width<=600px){
     .paper-card{
-        width: 260px;
-        height: 290px;
+        width: 200px;
+        height: 200px;
         border-radius: 30px;
         padding: 15px;
         margin-top: 20px;
