@@ -158,7 +158,7 @@ body{
         margin-top: 20px;
         box-sizing: border-box;
         background-color: var(--pureWhite);
-        overflow: scroll;
+        
     }
     .text{
         color: rgb(54, 53, 53);
@@ -216,7 +216,7 @@ body{
         padding: 20px;
         margin-top: 20px;
         background-color: var(--pureWhite);
-        overflow: scroll;
+        
     }
     .text{
         color: rgb(54, 53, 53);
